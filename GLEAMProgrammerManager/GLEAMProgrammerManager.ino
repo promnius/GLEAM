@@ -56,7 +56,14 @@ void setup() {
   sei();//allow interrupts
   pinMode(pinHEARTBEAT, OUTPUT);
   digitalWrite(pinHEARTBEAT, LOW);
-  
+
+  pinMode(pinMUX1A, OUTPUT);
+  pinMode(pinMUX1B, OUTPUT);
+  pinMode(pinMUX1C, OUTPUT);
+  pinMode(pinMUX2A, OUTPUT);
+  pinMode(pinMUX2B, OUTPUT);
+  pinMode(pinMUX2C, OUTPUT);
+    
   Serial.begin(9600);
   pixels.begin();
   pixels.clear();
